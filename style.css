@@ -1,0 +1,50 @@
+html {
+  height: 100%;
+  width: 100%;
+  overflow:hidden;
+}
+.tab {
+  user-select:none;
+}
+* {
+  font-family:verdana;
+  font-size:25px;
+}
+#verse,#reference {
+  opacity:0.0;
+  transition:opacity 0.5s ease-in;
+}
+/* #verse,#reference {
+  transition:opacity 0.5s ease-in;
+} */
+#reference {
+  text-align:right;
+}
+#copyright {
+  opacity:0.2;
+  background-color:#323232;
+  border-radius:8px;
+  position:absolute;
+  bottom:10px;
+  right:10px;
+  height:50px;
+  width:50px;
+  transition:opacity 0.15s ease-out;
+}
+#copyright:hover {
+  opacity:0.4;
+}
+#copyright-text-link {
+  text-decoration:none;
+}
+a, a:visited, a:hover, a:active {
+  color: inherit;
+}
+#copyright p {
+  color:#ffffff;
+  position:relative;
+  left:50%;
+  top:50%;
+  opacity:1.0 !important;
+  transform:translate(-25%,-140%);
+}
